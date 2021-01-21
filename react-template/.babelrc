@@ -1,0 +1,18 @@
+{
+  "presets": ["@babel/preset-react", "@babel/preset-env"],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators", //支持装饰器插件
+      {
+        "legacy": true //使用旧式（第一阶段）的装饰器语法和行为
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties", //编译类
+      {
+        "loose": true //将编译类属性以使用赋值表达式而不是Object.defineProperty
+      }
+    ],
+    ["@babel/plugin-transform-runtime"]
+  ]
+}
